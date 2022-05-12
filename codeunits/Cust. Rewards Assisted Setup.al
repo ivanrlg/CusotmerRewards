@@ -49,7 +49,7 @@ codeunit 50102 "Cust. Rewards Assisted Setup"
         // GLOBALLANGUAGE(1033);
         //AssistedSetup.AddTranslation(myAppInfo.Id, Page::"Customer Rewards Wizard", 1033, WizardTxt);
 
-        GuidedExperience.InsertAssistedSetup('Setup Plur-E ', 'Setup Plur-E ', 'Plur-E ', 0, ObjectType::Page, PAGE::"Customer Rewards Wizard",
+        GuidedExperience.InsertAssistedSetup('Customer Rewards Wizard', 'Customer Rewards Wizard ', 'Ivan Labrador', 0, ObjectType::Page, PAGE::"Customer Rewards Wizard",
               "Assisted Setup Group"::GettingStarted, VideoUrlSetupTxt, VideoCategory::GettingStarted, HelpSetupTxt);
         GLOBALLANGUAGE(Language.GetDefaultApplicationLanguageId());
     end;

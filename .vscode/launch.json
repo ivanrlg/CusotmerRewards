@@ -2,17 +2,31 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Microsoft cloud sandbox",
+            "name": "Sandbox Plur-e",
             "request": "launch",
-            "type": "al",
-            "environmentType": "Sandbox",
-            "environmentName": "plure",
-            "startupObjectId": 22,
-            "startupObjectType": "Page",
+            "type": "al",          
             "breakOnError": true,
             "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "startupObjectId": 50103,
+            "startupObjectType" : "Page",
+            "tenant": "f5d68211-2a97-44dc-8b3b-fdfdf8075073", 
+            "environmentName":"plure",
+            "schemaUpdateMode": "ForceSync",
+            "forceUpgrade": true,
+        },
+        {            
+            "name":  "Sandbox Docker TDD",
+            "type":  "al",
+            "request":  "launch",
+            "server":  "http://dockerforplure20-appsource-ci",
+            "serverInstance":  "BC",
+            "port":  7049,
+            "tenant":  "default",
+            "authentication":  "UserPassword",
+            "startupObjectId":  130451,
+            "startupObjectType":  "Page",
+            "schemaUpdateMode": "ForceSync",
+            "breakOnError":  true
         }
     ]
 }
